@@ -1,0 +1,231 @@
+/* The switch - the box around the slider */
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+
+/* Hide default HTML checkbox */
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.slider {
+    --background: #28096b;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    -webkit-transition: .1s;
+    transition: .1s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    background-color: #e8e8e8;
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    -webkit-box-shadow: inset 8px -4px 0px 0px #fff000;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+
+input:checked+.slider {
+    background-color: #522ba7;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-box-shadow: inset 15px -4px 0px 15px #fff000;
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+body {
+    background-color: rgb(rgb(160, 60, 60), rgb(131, 254, 131), rgb(142, 142, 222));
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    font-weight: normal;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.5rem;
+}
+
+h1 {
+    font-family: "lexend deca";
+    font-style: oblique;
+    text-align: left;
+    font-size: 50px;
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+}
+
+.img-1 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-top: auto;
+    width: 20%;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.p1 {
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    line-height: 20px;
+    height: 128px;
+    font-weight: 400;
+    display: block;
+    font-family: "lexend deca";
+    margin: 0;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.p2 {
+    line-height: 28px;
+    padding-bottom: 28px;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-family: "lexend deca";
+    font-size: 18px;
+    font-style: normal;
+    margin: 50px;
+    padding: auto;
+    text-align: center;
+    tab-size: 4;
+    text-size-adjust: 100%;
+}
+
+h2 {
+    font-family: "lexend deca";
+    font-size: 40px;
+    text-align: center;
+    margin: 20;
+    padding: 20;
+}
+
+.github,
+.insta {
+    margin-left: 50em;
+    margin: 5px;
+    padding: 5px;
+    margin-right: 50em;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.div-skill {
+    display: block;
+    margin-left: auto;
+    width: 25%;
+    margin-right: auto;
+}
+
+.img-php,
+.img-react,
+.img-sql {
+    display: block;
+    margin-left: auto;
+    width: 20%;
+    margin-right: auto;
+}
+
+.footer-p {
+    padding-top: 28px;
+    line-height: 28px;
+    font-weight: 400;
+    box-sizing: border-box;
+    font-family: "lexend deca";
+    font-size: 18px;
+    font-style: normal;
+    margin: 50px;
+    padding: auto;
+    text-align: center;
+    tab-size: 4;
+    text-size-adjust: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: "lexend deca";
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+h4 {
+    font-family: "lexend deca";
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 20%;
+}
+
+h5 {
+    font-family: "lexend deca";
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.top-sec {
+    text-align: center;
+    margin-left: 10px;
+    box-sizing: border-box;
+}
+
+.ind-a {
+    margin: 20px;
+    padding-inline-end: 0;
+}
+
+.div-img {
+    border: 1px solid black;
+    margin: 10px;
+}
+
+.nav a {
+    display: inline;
+    text-decoration: none;
+}
